@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  a {
+    @apply font-sans;
+  }
+  /* screen */
+  .basic-screen {
+    @apply w-[80%];
+    @apply max-desktop:w-[90%];
+    @apply max-laptop:w-[100%];
+    @apply m-auto;
+    @apply p-[20px];
+  }
+  .section-screen {
+    @apply gap-[10px];
+  }
+  /* sort */
+  .xy-center-f {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+  }
+  .xy-center-row {
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+  }
+
+  .xy-center-p {
+    @apply absolute;
+    @apply top-[50%];
+    @apply left-[50%];
+  }
+  .content-center {
+    @apply translate-x-[-50%];
+    @apply translate-y-[-50%];
+  }
+
+  .write-vertical {
+    writing-mode: vertical-lr;
+  }
+  /* text */
+  .text-list {
+    @apply text-xl;
+    @apply max-laptop:text-base;
+    @apply tablet:max-tablet:text-base;
+  }
+  /* line */
+  .boundary {
+    @apply border-t-[1px];
+    @apply border-[#121212];
+    @apply border-solid;
+  }
+  .borders {
+    @apply border-[#121212];
+    @apply border-solid;
+  }
+}
