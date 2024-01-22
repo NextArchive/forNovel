@@ -6,7 +6,7 @@ export default function GoogleLoginButton() {
   const { data: session } = useSession()
   return (
     <button onClick={() => signIn("google", { callbackUrl: "/" })}>
-      구글로 로그인
+      구글 로그인
     </button>
   );
 }

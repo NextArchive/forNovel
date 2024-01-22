@@ -1,7 +1,8 @@
 export { default as Logo } from "./logo/Logo";
 
 // Button
-export {default as GoogleLoginButton} from "./button/GoogleLoginButton"
+export { default as GoogleLoginButton } from "./button/GoogleLoginButton";
+export { default as SignUpButton } from "./button/SignUpButton";
 //Layout
 export { default as Header } from "./layout/header/Header";
 // MainPage
